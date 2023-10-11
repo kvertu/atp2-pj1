@@ -3,6 +3,9 @@
 <p>Desenvolvido por Kayke Guilherme Vertu</p>
 
 <h2>Estrutura do arquivo do polinômio</h2>
-<p>Primeira linha: Grau do polinômio;</p>
-<p>Segunda linha: Coeficiente do termo independente;</p>
-<p>Terceira linha: Coeficiente de x<sup>1</sup>.</p>
+<p>1ª linha: Grau do polinômio;</p>
+<p>2ª linha: Coeficiente do termo independente;</p>
+<p>3ª linha: Coeficiente de x.</p>
+<p>4ª linha: Coeficiente de x<sup>2</sup>.</p>
+<p>...</p>
+<p>Ultima linha: Coeficiente de x<sup>n</sup>.</p>
