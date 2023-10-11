@@ -7,18 +7,18 @@
 <ol>
     <li>Grau do polinômio;</li>
     <li>Coeficiente do termo independente;</li>
-    <li>Coeficiente de x.</li>
-    <li>Coeficiente de x<sup>2</sup>.</li>
+    <li>Coeficiente de x;</li>
+    <li>Coeficiente de x<sup>2</sup>;</li>
     <li>...</li>
     <li>Coeficiente de x<sup>n</sup>.</li>
 </ol>
 <p>Dentro de input há alguns polinômios para testar o programa:</p>
 <ul>
-    <li>pgrau2.txt: Resultado de (x + 1)<sup>2</sup></li>
-    <li>pgrau2.txt: Resultado de (x + 1)<sup>3</sup></li>
-    <li>pgrau2.txt: Resultado de (x + 0.5)<sup>2</sup></li>
-    <li>xaoquadrado.txt: x<sup>2</sup></li>
-    <li>xaocubo.txt: x<sup>3</sup></li>
+    <li>pgrau2.txt: Resultado de (x + 1)<sup>2</sup>;</li>
+    <li>pgrau2.txt: Resultado de (x + 1)<sup>3</sup>;</li>
+    <li>pracional.txt: Resultado de (x + 0.5)<sup>2</sup>, teste de coeficientes decimais;</li>
+    <li>xaoquadrado.txt: x<sup>2</sup>;</li>
+    <li>xaocubo.txt: x<sup>3</sup>.</li>
 </ul>
 
 
