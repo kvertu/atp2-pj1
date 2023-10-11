@@ -12,7 +12,7 @@
     <li>...</li>
     <li>Coeficiente de x<sup>n</sup>.</li>
 </ol>
-<p>Dentro de input há alguns polinômio para testar o programa:</p>
+<p>Dentro de input há alguns polinômios para testar o programa:</p>
 <ul>
     <li>pgrau2.txt: Resultado de (x + 1)<sup>2</sup></li>
     <li>pgrau2.txt: Resultado de (x + 1)<sup>3</sup></li>
