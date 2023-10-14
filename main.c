@@ -1,5 +1,5 @@
 /*
-    ATP2 - PROJETO 1 - Polinômios
+    ATP 2 - PROJETO 1 - Polinômios
 
     Desenvolvido por:
         Kayke G. Vertu
