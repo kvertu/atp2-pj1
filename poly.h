@@ -25,6 +25,7 @@ void normalize_poly(poly * p); // Normaliza o polinômio
 
 // Leitura e escrita em polinômios
 void read_poly(poly p); // Lê o polinômio a partir da entrada do usuário no terminal (Não é utilizado na main.c, criado apenas para teste)
+int get_filesize(char * filename); // Pega o tamanho do arquivo (em qtde de linhas)
 poly readfile_poly(char * filename); // Lê o polinômio a partir de um arquivo
 void print_poly(poly p); // Imprime o polinômio no terminal
 void printfile_poly(char * filename, poly p); // Imprime o polinômio em um arquivo (Não é utilizado na main.c, criado apenas para deixar a biblioteca poly.h mais completa)

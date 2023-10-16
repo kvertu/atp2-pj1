@@ -90,7 +90,7 @@ void read_poly(poly p) {
     normalize_poly(&p);
 }
 
-int getsize(char * filename) {
+int get_filesize(char * filename) {
     FILE * fpoly = fopen(filename, "r"); 
     if (fpoly == NULL) {
         printf("ERRO: Não foi possível abrir o arquivo.\n");
@@ -100,6 +100,7 @@ int getsize(char * filename) {
     // Obtem o tamanho do arquivo
     int tam = 0;
     while (feof(fpoly))
+        // TODO: Arrumar uma forma de percorrer o arquivo sem fazer leitura de nenhuma variavel
         tam++;
 
     fclose(fpoly);
@@ -119,7 +120,7 @@ poly readfile_poly(char * filename) {
     }
 
     // Obtem o tamanho do arquivo
-    int g = getsize(filename);
+    int g = get_filesize(filename);
 
     // O grau do polinomio é o tamanho do arquivo menos o termo independente
     p = new_poly(g - 1, 0);
@@ -173,8 +174,6 @@ void printfile_poly(char * filename, poly p) {
         printf("ERRO: Não foi possível acessar o arquivo.\n");
         return;
     } else {
-        fprintf(fpoly, "%d\n", p.grau);
-
         for (int i = 0; i <= p.grau; i++) {
             fprintf(fpoly, "%lf\n", p.data[i]);
         }
