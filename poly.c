@@ -99,9 +99,13 @@ int get_filesize(char * filename) {
 
     // Obtem o tamanho do arquivo
     int tam = 0;
-    while (feof(fpoly))
-        // TODO: Arrumar uma forma de percorrer o arquivo sem fazer leitura de nenhuma variavel
+    double tmp;
+    while (!feof(fpoly)) {
+        // Passando pelo arquivo (solução bosta)
+        // A fazer: implementar isso de tal forma que ele não gaste processamento lendo as variáveis
+        fscanf(fpoly, "%lf", &tmp);
         tam++;
+    }
 
     fclose(fpoly);
 
