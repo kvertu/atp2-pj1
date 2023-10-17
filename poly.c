@@ -252,7 +252,7 @@ poly subtr_poly(poly p, poly q) {
                 r.data[i] = p.data[i] - q.data[i];
             }
             for (int j = q.grau + 1; j <= p.grau; j++) {
-                r.data[j] =  -p.data[j];
+                r.data[j] =  p.data[j];
             }
         } else {
             r = new_poly(q.grau, 0);
