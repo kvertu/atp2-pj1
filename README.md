@@ -5,10 +5,10 @@
 <h2>Arquivos de polinômio</h2>
 <p>As linhas do arquivo segue a seguinte estrutura:</p>
 <ol>
-    <li>Grau do polinômio;</li>
     <li>Coeficiente do termo independente;</li>
     <li>Coeficiente de x;</li>
     <li>Coeficiente de x<sup>2</sup>;</li>
+    <li>Coeficiente de x<sup>3</sup>;</li>
     <li>...</li>
     <li>Coeficiente de x<sup>n</sup>.</li>
 </ol>

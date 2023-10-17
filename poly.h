@@ -31,10 +31,10 @@ void print_poly(poly p); // Imprime o polinômio no terminal
 void printfile_poly(char * filename, poly p); // Imprime o polinômio em um arquivo (Não é utilizado na main.c, criado apenas para deixar a biblioteca poly.h mais completa)
 /*
     Estrutura do arquivo:
-        1ª Linha: Grau do polinômio
-        2ª Linha: Coeficiente do termo independente
-        3ª Linha: Coeficiente de x
-        4ª Linha: Coeficiente de x^2
+        1ª Linha: Coeficiente do termo independente
+        2ª Linha: Coeficiente de x
+        3ª Linha: Coeficiente de x^2
+        4ª Linha: Coeficiente de x^3
         ...
         Última Linha: Coeficiente do termo de maior grau
 */
