@@ -19,6 +19,7 @@
     <li>pracional.txt: Resultado de (x + 0.5)<sup>2</sup>, teste de coeficientes decimais;</li>
     <li>xaoquadrado.txt: x<sup>2</sup>;</li>
     <li>xaocubo.txt: x<sup>3</sup>.</li>
+    <li>xmaisum.txt: x + 1</li>
 </ul>
 
 
