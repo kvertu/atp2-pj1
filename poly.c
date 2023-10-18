@@ -105,7 +105,6 @@ poly readfile_poly(char * filename) {
     int tam = 0;
     double tmp;
     while (!feof(fpoly)) {
-        // A fazer: implementar isso de tal forma que ele não gaste processamento lendo as variáveis
         // Ele precisa pular a linha de alguma forma para assim chegar no EOF
         fscanf(fpoly, "%lf", &tmp);
         tam++;
