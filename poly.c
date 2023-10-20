@@ -40,11 +40,17 @@ poly new_poly(int g, double def) {
 }
 
 bool is_poly_null(poly p) {
+    /*
+        Verifica se o polinômio p é nulo
+    */
     if (p.data == NULL || p.grau < 0) return true;
     return false;
 }
 
 void free_poly(poly * p) {
+    /*
+        Libera o espaço de memória do polinômio p
+    */
     if (p->data != NULL) {
         free(p->data);
         p->data = NULL;
@@ -52,6 +58,9 @@ void free_poly(poly * p) {
 }
 
 void normalize_poly(poly * p) {
+    /*
+        Normaliza o polinômio
+    */
     if (!is_poly_null((*p))) {
         // O polinômio só será normalizado quando o polinômio ter grau maior que 0 e o coeficiente do maior grau for 0
         // Esse procedimento vai se repetir até não houver nenhum coeficiente 0 no último grau do polinômio ou quando só sobrar o termo independente
@@ -77,6 +86,7 @@ void normalize_poly(poly * p) {
 void read_poly(poly p) {
     /*
         Preenche o polinômio p com entradas do usuário no terminal
+        Pre-condição: grau precisa ser definido antes.
     */
     if (!is_poly_null(p)) {
         for (int i = 0; i < (p.grau + 1); i++) {
@@ -91,6 +101,9 @@ void read_poly(poly p) {
 }
 
 poly readfile_poly(char * filename) {
+    /*
+        Lê os coeficientes do polinômio p do arquivo filename
+    */
     poly p;
 
     FILE * fpoly = fopen(filename, "r"); 
@@ -149,9 +162,8 @@ void print_poly(poly p) {
 
 void printfile_poly(char * filename, poly p) {
     /*
-        Imprime os coeficientes do polinômio p no arquivo output/filename
+        Imprime os coeficientes do polinômio p no arquivo filename
     */
-
     if (is_poly_null(p)) {
         printf("ERRO: Não é possível escrever um polinômio nulo no arquivo.\n");
         return;
@@ -355,6 +367,10 @@ double integrate_poly_def(poly p, double min, double max) {
 }
 
 double newton_poly(poly p, double start, int tmax, double epsilon) {
+    /*
+        Calcula o método de Newton-Raphson no polinômio para achar uma raiz das raizes do polinômio
+        Essa função não considera casos de polinômios sem raizes reais
+    */
     double res = 0, aux, num, den;
 
     if (epsilon <= 0) {
