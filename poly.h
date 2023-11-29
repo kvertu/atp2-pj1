@@ -42,6 +42,7 @@ void printfile_poly(char * filename, poly p); // Imprime o polinômio em um arqu
 poly add_poly(poly p, poly q); // p + q
 poly subtr_poly(poly p, poly q); // p - q
 poly prod_poly(poly p, poly q); // p * q
+poly esc_poly(poly p, double a); // a * p
 double calc_poly(poly p, double x); // Calcula p(x)
 
 // Derivação e Integração

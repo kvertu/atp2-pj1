@@ -303,6 +303,27 @@ poly prod_poly(poly p, poly q) {
     return r;
 }
 
+poly esc_poly(poly p, double a) {
+    /*
+        Calcula o produto escalar de a * p(x)
+    */
+    poly r;
+
+    if (!is_poly_null(p)) {
+        r = new_poly(p.grau, 0);
+
+        for (int i = 0; i <= p.grau; i++) {
+            r.data[i] = p.data[i] * a;
+        }
+    } else {
+        printf("AVISO: Não é possível calcular o produto escalar de um polinômio nulo.\n");
+        r.grau = -1;
+        r.data = NULL;
+    }
+
+    return r;
+}
+
 poly derivate_poly(poly p) {
     /*
         Calcula a derivada do polinômio p
